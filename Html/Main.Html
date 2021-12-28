@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hotel</title>
+			<script src="../Sources/Js/jquery.min.js"></script>
+			<script src="../Sources/Js/popper.min.js"></script>
+			<script src="../Sources/Js/bootstrap.min.js"></script>
+			<link rel="stylesheet" href="../Sources/Css/bootstrap.min.css">
+			<link rel="stylesheet" href="../Sources/Css/Style.css">
+			 <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
+			<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+		<!--nav bar-->
+	<div class="container">
+		<div class="row" id="row1">
+		<div class="col-md-6">
+		<ul id="nav" class="nav nav-tabs nav-justified fixed-top bg-dark " role="tablist" style="font-family: Shabnam">
+			<li class="nav-item ">
+				<a href="Main.Html" class="nav-link active" role="tab" data-toggle=""><i class="fas fa-home"></i> &nbspخانه</a>
+			</li>
+			<li class="nav-item">
+				<a href="#cost" class="nav-link" role="tab" data-toggle="cost"><i class="fas fa-money-check"></i> &nbspقیمت</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown">رزرو اتاق</a>
+				<div class="dropdown-menu " style="font-family: IranNastaliq ; text-align: center; font-size:16pt;">
+					<h6 class="dropdown-header">برج شرقی </h6>
+					<a href="#" class="dropdown-item">یک تخته برج شرقی</a>
+					<a href="#" class="dropdown-item">دو تخته برج شرقی</a>
+					<div class="dropdown-divider"></div>
+					<h6 class="dropdown-header">برج غربی</h6>
+					<a href="#" class="dropdown-item">دو تخته برج غربی </a>
+					<a href="#" class="dropdown-item">یک تخته برج غربی</a>
+				</div>
+			</li>
+			
+			<li class="nav-item">
+				<a href="#footer1" class="nav-link" role="tab" data-toggle="footer"><i class="fas fa-envelope"></i> &nbsp ارتباط با ما</a>
+			</li>
+		</ul>
+		</div>
+		
+
+		<!--Log in-->
+
+ 	
+				<div class="col-md-3" id="login">
+					<button id="login" class="btn btn-dark fixed-top" data-toggle="modal" data-target="#logmodal">ورود</button>
+					<div class="modal" id="logmodal">
+						<div class="modal-dialog modal-dialog-centered modal-md">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="title-modal">Login</h4>
+									<button type="button" data-dismiss="modal" class="close">Close</button>
+								</div>
+								<div class="modal-body">
+									<form action="">
+										<div class="form-group">
+											<label for="User">User Name:</label>
+											<input type="text" class="form-contorol" id="User" placeholder="Gmail or UserID">
+										</div>
+										<div class="form-group">
+											<label for="pass">Password:</label>
+											<input type="Password" class="form-contorol" id="pass" placeholder="*******">
+										</div>
+										
+										<div class="form-group">
+											<label id="lb" for="rem">Remember Me!</label>
+										<label id="rem" class="switch">
+										  <input  id="chb"  type="checkbox">
+										  <span class="slider round"></span>
+										</label>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button class="btn btn-dark btn-block"><a href="index1.html">Login</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-md-3" id="reg">
+					<button id="login" class="btn btn-light " data-toggle="modal" data-target="#logmodall">ثبت نام</button>
+					<div class="modal" id="logmodall" >
+						<div class="modal-dialog modal-dialog-centered modal-md" >
+							<div class="modal-content" >
+								<div class="modal-header">
+									<h4 class="title-modal">Register</h4>
+									<button type="button" data-dismiss="modal" class="close">Close</button>
+								</div>
+								<div class="modal-body" >
+									<form action="check-login.php" method="post">
+										<div class="form-group">
+											<label for="User">User Name:</label>
+											<input type="text" class="form-contorol" id="User" placeholder="Gmail or UserID">
+										</div>
+										<div class="form-group">
+											<label for="name">name:</label>
+											<input type="text" class="form-contorol" id="name" placeholder="Amir">
+										</div>
+										<div class="form-group">
+											<label for="pass">Password:</label>
+											<input type="Password" class="form-contorol" id="pass" placeholder="*******">
+										</div>
+										<div class="form-group">
+											<label for="pass-rep">Repeat Password:</label>
+											<input type="Password" class="form-contorol" id="pass-rep" placeholder="*******">
+										</div>
+										<div class="form-group">
+											<label for="email">email:</label>
+											<input type="email" class="form-contorol" placeholder="Amir14@gmail.com" id="email" name="email" >
+										</div>
+										<div class="form-group">
+											<label for="phone">phone:</label>
+											<input type="phone" id="phone" name="phone" placeholder="0912*****09">
+										</div>
+										<div class="modal-footer">
+											<input type="submit" name="btn" id="btn" class="btn btn-dark btn-block" value="Register">
+										</div>
+
+									</form>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<!--header-->
+		<div class="header">
+			<div class="container-clearfix">
+				<p style="font-family: IranNastaliq ; font-size: 20pt;">رزرو هتل ساده و مطمئن به صورت آنلاین</p>
+				<ul class="call-info">
+					<li><a href="#" id="call"><i class="fas fa-phone-volume"></i> &nbsp 021-6624852</a></li>
+					<li><a href="#" id="call" style="font-family: Rose">&nbsp<i class="far fa-envelope"></i>&nbsp Hotel-Iran@gmail.com</a></li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<img src="../Sources/Img/2.jpg" class="img-fluid img-thumbnail" alt="" style="width: 100%">
+		</div>
+
+		<div>
+			<div>
+				<div>
+				<h6 id="Hotel-Iran">هتل ایران</h6>
+				</div>
+				<div>
+				<ul  style="display: inline-flex; margin-left:945px;">
+					<li id="st"><i class="fas fa-star"></i></li>
+					<li id="st"><i class="fas fa-star"></i></li>
+					<li id="st"><i class="fas fa-star"></i></li>
+					<li id="st"><i class="fas fa-star"></i></li>
+					<li id="st"><i class="fas fa-star"></i></li>
+				</ul>
+				</div>
+			</div>
+
+		<!--Loading	<div class="wraper">
+				<div class="spinner">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>  -->
+
+			<div>
+				<p style="margin-left: 395px ; margin-top: -60px; font-family:IranNastaliq; ">
+					
+					
+					<span style="font-size: 24pt;">تهران،بزرگراه شهید چمران،هتل ایران</span> &nbsp &nbsp  <i style="font-size: 18pt;" id="map" class="fas fa-map-marker-alt"></i>
+					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150978.50037129447!2d51.240967682768385!3d35.67182705284356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0184f52c957f%3A0x55b32674bc21ead0!2sTehran+Province%2C+Iran!5e0!3m2!1sen!2snl!4v1561066345044!5m2!1sen!2snl" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<marquee behavior="scroll" direction="right" style="font-family: IranNastaliq;font-size: 18pt; border-top:inset 0.5px;border-radius: 25px" hspace="100px" >هتل ایران بزرگترین و مجهز ترین هتل ایران</marquee>
+		</div>
+		
+		<div>
+			<div id="fac">
+				<h4 style="font-family: Koodakbold">امکانات هتل</h4>
+				<img class="img-fluid" src="../Sources/Img/b.gif" alt="" style="width: 200px; height: 100px">
+			</div>
+		</div>
+
+		<div id="fac2">
+		
+
+			<div class="table-responsive">
+	<table class="table-striped table">
+
+		<tbody class="table-light ">
+			<tr>
+				<th>فروشگاه&nbsp<i class="fas fa-shopping-cart"></i></th>
+				<th> آرایشگاه&nbsp<i class="fas fa-cut"></i></th>
+				<th>کافی شاپ &nbsp<i class="fas fa-coffee"></i></th>
+				<th> پارکینگ&nbsp<i class="fas fa-parking"></i></th>
+			</tr>
+			<tr>
+				<th>صندوق امانات &nbsp<i class="fas fa-archive"></i></th>
+				<th>عابربانک &nbsp<i class="fas fa-money-check"></i></th>
+				<th>تاکسی سرویس &nbsp<i class="fas fa-taxi"></i></th>
+				<th>باشگاه ورزشی &nbsp<i class="fas fa-dumbbell"></i></th>
+
+			</tr>
+			<tr>
+				<th>رستوران &nbsp<i class="fas fa-utensils"></i></th>
+				<th>استخر &nbsp<i class="fas fa-swimming-pool"></i></th>
+				<th>اینترنت پرسرعت &nbsp<i class="fas fa-wifi"></i></th>
+				<th>پذیرش &nbsp<i class="fas fa-concierge-bell"></i></th>
+			</tr>
+			
+		</tbody>
+
+	</table>
+		</div>
+		</div>
+
+	
+
+			<div>
+			<div id="fac">
+				<h4 style="font-family: Koodakbold">محاسبه قیمت اقامت</h4>
+				<img class="img-fluid" src="../Sources/Img/b.gif" alt="" style="width: 200px; height: 100px">
+			</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<h6>امکانات مورد نظر را انتخاب کنید</h6>
+				</div>
+				<div class="card-body">
+					<form action="post">
+						<div class="form-group">
+						<label for="order">انتخاب اتاق:</label>
+						<select name="order" id="order">
+							<option value="1">یک تخته برج شرقی</option>
+							<option value="2">دو تخته برج شرقی</option>
+							<option value="3">یک تخته برج غربی</option>
+							<option value="4">دو تخته برج غربی</option>
+						</select>
+						</div>
+
+						<div class="form-check">
+						<label class="form-check-label">انتخاب وعده غذایی:</label><br>
+						صبحانه:<input id="brf" class="form-check-input" type="checkbox"><br>
+						نهار:<input class="form-check-input" type="checkbox"><br>
+						شام:<input class="form-check-input" type="checkbox"><br>
+
+						</div>
+						<div class="form-group">
+						<label id="night-s">تعداد شب اقامت :</label>
+						<input type="number" id="num-s">
+						</div>
+					</form>
+				</div>
+				<div class="card-footer">
+					<button type="button" class="btn btn-dark btn-block" >
+						محاسبه
+					</button>
+				</div>
+			</div>
+
+<a name="cost"></a>
+			<div class="card" id="cost">
+				<div class="card-header ">
+					<h6>رزرو اتاق   </h6>
+				</div>
+
+					<div class="card-body ">
+					<form action="post">
+						<div class="form-group">
+						<label for="order">انتخاب اتاق:</label>
+						<select name="order" id="order">
+							<option value="1">یک تخته برج شرقی</option>
+							<option value="2">دو تخته برج شرقی</option>
+							<option value="3">یک تخته برج غربی</option>
+							<option value="4">دو تخته برج غربی</option>
+						</select>
+						</div>
+
+						<div class="form-check">
+						<label class="form-check-label">انتخاب وعده غذایی:</label><br>
+						صبحانه:<input id="brf" class="form-check-input" type="checkbox"><br>
+						نهار:<input class="form-check-input" type="checkbox"><br>
+						شام:<input class="form-check-input" type="checkbox"><br>
+
+						</div>
+						<div class="form-group">
+						<label id="night-s">تعداد شب اقامت :</label>
+						<input type="number" id="num-s">
+						</div>
+					</form>
+				</div>
+				<div class="card-footer">
+
+				<button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#fdmodal">
+			رزرو اتاق
+				</button>
+
+		<div class="modal" id="fdmodal">
+			<div class="modal-dialog modal-dialog-centered modal-md">
+				<div class="modal-content">
+					<div class="modal-header btn-light">
+						<h5 class="modal-title">Reservation</h5>
+						<button type="button" class="close" data-dismiss="modal">Close</button>
+					</div>
+
+
+					<div class="modal-body ">
+						<div class="row">
+							<div>
+								<form action="" id="form2">
+									<div class="form-group">
+										<label for="text2">Your Full Name:</label>
+										<input type="text" class="form-control" id="text2">
+									</div>
+									<div class="form-group">
+										<label for="id2">ID-NO:</label>
+										<input type="text" class="form-control" id="id2">
+									</div>
+									<div class="form-group">
+										<label for="phone2">Your Phone:</label>
+										<input  type="text" class="form-control" id="phone2"> 
+									</div>
+
+								</form>
+							</div>
+							
+						</div>
+					</div>
+
+
+					<div class="modal-footer bg-light">
+						<input type="submit" class="btn btn-block btn-dark  " value="رزرو">
+					</div>
+					
+				</div>
+
+
+			</div>
+		</div>
+
+
+
+
+	</div>
+	
+
+</body>
+<footer>
+<div id="footer1">
+	<ul style="display: inline-flex;margin-left: 270px;">
+        <li><a href="#"><i title = "Instagram" class="icon ion-logo-instagram"></i></a></li>
+        <li><a href="#"><i title = "Twitter"   class="icon ion-logo-twitter"></i></a></li>
+        <li><a href="#"><i title = "Telegram" class="fab fa-telegram"></i></a></li>
+        <li><a href="#"><i title = "Google+"   class="icon ion-logo-googleplus"></i></a></li>
+        <li><a href="#"><i title = "Facebook" class="fab fa-facebook-square"></i></a></li>
+        </ul>
+ </div>
+</footer>
+</html>
+
+
+

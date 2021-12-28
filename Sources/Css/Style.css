@@ -1,0 +1,457 @@
+/**Fonts**/
+
+@font-face
+{
+		font-family: Bkoodak;
+src :   url('../Fonts/BKOODB.eot') format('eot'),
+		url('../Fonts/BKOODB.woff') format('woff'),
+		url('../Fonts/BKOODB.TTf') format('truetype');
+
+
+		font-family: Bbadr;
+src :   url('../Fonts/BBADR.eot') format('eot'),
+		url('../Fonts/BBADR.woff') format('woff'),
+		url('../Fonts/BBADR.TTf') format('truetype');
+
+
+		font-family: Show;
+src :   url('../Fonts/SHOWG.eot') format('eot'),
+		url('../Fonts/SHOWG.woff') format('woff'),
+		url('../Fonts/SHOWG.TTf') format('truetype');
+
+		font-family: Hobo;
+src :   url('../Fonts/HoboStd.eot') format('eot'),
+		url('../Fonts/HoboStd.woff') format('woff'),
+		url('../Fonts/HoboStd.TTf') format('truetype');
+
+		font-family: Niag;
+src :   url('../Fonts/NIAGENG.eot') format('eot'),
+		url('../Fonts/NIAGENG.woff') format('woff'),
+		url('../Fonts/NIAGENG.TTf') format('truetype');
+
+		font-family: "Rose";
+src :   url("../Fonts/RosewoodStd-Regular.eot") format('eot'),
+		url("../Fonts/RosewoodStd-Regular.woff") format('woff'),
+		url("../Fonts/RosewoodStd-Regular.TTf") format('truetype');
+
+		 font-family: "giddy";
+src: 	 url("../Fonts/GiddyupStd.eot"); /* IE9 Compat Modes */
+src: 	 url("../Fonts/GiddyupStd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+   		 url("../Fonts/GiddyupStd.ttf") format("truetype"), /* Safari, Android, iOS */
+    	 url("../Fonts/GiddyupStd.woff") format("woff"); /* Modern Browsers */
+
+
+    	font-family: "IranNastaliq";
+ src: 	url("./Fonts/IranNastaliq.eot"); /* IE9 Compat Modes */
+ src: 	url("./Fonts/IranNastaliq.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+   		url("./Fonts/IranNastaliq.otf") format("opentype"), /* Open Type Font */
+    	url("./Fonts/IranNastaliq.woff") format("woff"); /* Modern Browsers */
+  
+
+       font-family: Shabnam;
+ src: 	url('http://fonts.codearena.ir/rastikerdar/shabnam/shabnam.eot');
+ src: 	url('http://fonts.codearena.ir/rastikerdar/shabnam/shabnam.eot?#iefix') format('embedded-opentype'),
+        url('http://fonts.codearena.ir/rastikerdar/shabnam/shabnam.woff') format('woff'),
+        url('http://fonts.codearena.ir/rastikerdar/shabnam/shabnam.ttf') format('truetype');
+      font-weight: normal;
+
+
+      font-family: Titrbold;
+ src: url('http://fonts.codearena.ir/b/titrbold/titrbold.eot');
+ src: url('http://fonts.codearena.ir/b/titrbold/titrbold.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.codearena.ir/b/titrbold/titrbold.woff') format('woff'),
+      url('http://fonts.codearena.ir/b/titrbold/titrbold.ttf') format('truetype');
+    font-weight: normal;
+
+
+     font-family: Homa;
+ src: url('http://fonts.codearena.ir/b/homa/homa.eot');
+ src: url('http://fonts.codearena.ir/b/homa/homa.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.codearena.ir/b/homa/homa.woff') format('woff'),
+      url('http://fonts.codearena.ir/b/homa/homa.ttf') format('truetype');
+    font-weight: normal;
+
+    font-family: Vazir;
+ src: url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.eot');
+ src: url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.woff') format('woff'),
+      url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.ttf') format('truetype');
+    font-weight: normal;
+
+
+     font-family: Koodakbold;
+      src: url('http://fonts.codearena.ir/b/koodakbold/koodakbold.eot');
+      src: url('http://fonts.codearena.ir/b/koodakbold/koodakbold.eot?#iefix') format('embedded-opentype'),
+           url('http://fonts.codearena.ir/b/koodakbold/koodakbold.woff') format('woff'),
+           url('http://fonts.codearena.ir/b/koodakbold/koodakbold.ttf') format('truetype');
+      font-weight: normal;
+    
+}
+
+a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover
+{
+	color:#fff;
+}
+
+#nav
+{
+	width:73.5%;
+	border-radius:0 0px 60px 0;
+}
+
+#login
+{
+	width: 200px;
+	margin-left: 560px;
+	position: absolute;
+	height: 43px;
+}
+
+#reg
+{
+	width: 200px;
+	margin-left: 360px;
+	 position: absolute;
+	 height: 43px;
+}
+
+#User
+{
+	text-align: center;
+	 border-radius: 5px;
+	  margin-left: 78px;
+}
+
+#pass
+{
+	text-align: center;
+	 border-radius: 5px;
+	  margin-left: 90px;
+}
+#pass-rep
+{
+	margin-left: 37px;
+	border-radius: 5px;
+	text-align:center; 
+}
+#email
+{
+	margin-left: 120px;
+		border-radius: 5px;
+	text-align:center; 
+}
+#phone
+{
+	
+margin-left: 118px;
+		border-radius: 5px;
+	text-align:center; 
+}
+#name
+{
+	margin-left: 116px;
+		border-radius: 5px;
+	text-align:center; 
+}
+#reg
+{
+	float: right;
+}
+
+/* The switch - the box around the slider */
+.switch
+{
+ position: relative;
+ display: inline-block;
+ width: 60px;
+ height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input
+{
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+/* The slider */
+.slider 
+{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before
+ {
+ 	position: absolute;
+ 	content: "";
+ 	height: 26px;
+ 	width: 26px;
+ 	left: 4px;
+ 	bottom: 4px;
+ 	background-color: white;
+ 	-webkit-transition: .4s;
+ 	transition: .4s;
+ }
+
+input:checked + .slider 
+{
+	background-color: #343a40;
+}
+
+input:focus + .slider 
+{
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before 
+{
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round
+ {
+ 	border-radius: 34px;
+ }
+
+.slider.round:before 
+{
+	border-radius: 50%;
+}
+
+#lb
+{
+	margin-left: 50px
+}
+
+#rem
+{
+	margin-left: 50px
+}
+
+h6
+{
+	text-align: center;
+}
+
+.dropdown-menu
+{
+	margin-left: 45px;
+	border-top: none;
+	border-radius: 15px;
+}
+
+.header
+{
+	margin-top: 50px;
+}
+
+div>.header>.container-clearfix>p
+{
+	float: right;
+}
+
+ul>li
+{
+	list-style: none;
+}
+
+#call
+{
+	color: black;
+}
+
+#call:hover
+{
+	text-decoration: none;
+}
+.call-info>li
+{
+	display: inline-flex;
+}
+
+.call-info li:first-child:after
+{
+	content: '|';margin-left: 1rem; color: #4f4b4c;
+}
+
+.container-clearfix
+{
+	border-bottom: 0.5px dotted black ;
+	 border-bottom-left-radius: 35px;
+}
+
+#Hotel-Iran
+{
+	margin-left: 950px;
+	margin-top: 50px;
+	 font-weight: 900;
+	 font-size: 24pt;
+	 font-family: Titrbold;
+}
+
+#map:hover
+{
+	font-size: 16pt;
+	color: orange;
+}
+
+#st:hover
+{
+	color: gold;
+}
+
+#fac
+{
+	text-align: center;
+}
+
+#fac>h4
+{
+	margin-top: 70px;
+}
+
+#fac>img
+{
+	margin-top: -30px;
+}
+
+div>table
+{
+	text-align: center;
+	font-family: Koodakbold;
+}
+div>.card-body>form
+{
+	text-align: center;
+	font-family: Koodakbold
+}
+
+#order
+{
+	font-family:IranNastaliq;
+	font-size: 16pt;
+	border-radius: 15px;
+	padding:0 15px 0 15px;
+	margin-left: 25px 
+}
+
+.form-check
+{
+	text-align: center;
+}
+
+.form-check>input
+{
+	margin-left: 20px
+}
+
+.form-check>label
+{
+	margin-left: -205px
+}
+
+#brf
+{
+	margin-left: 11px
+}
+
+#night-s
+{
+	margin-left: -30px
+}
+
+#num-s
+{
+	margin-left: 15px;
+	border-radius: 5px;
+	border:0.5px solid gray;
+	text-align: center;
+}
+
+.wraper
+{
+	margin: auto;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+.spinner
+{
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	margin: 0 auto;
+	animation: spin 1s steps(12) infinite;
+}
+
+.spinner i
+{
+	position: absolute;
+	display: block;
+	left: 50%;
+	height: 32px;
+	width: 6px;
+	transition: all 1s;
+	margin-left: -3px;
+	transform-origin: center 50px;
+	background: black;
+	border-radius: 50%;
+}
+
+.spinner i:nth-child(2){
+	opacity: .913;transform: rotate(30deg);
+}
+.spinner i:nth-child(3){
+	opacity: .83;transform: rotate(60deg);
+}.spinner i:nth-child(4){
+	opacity: .747;transform: rotate(90deg);
+}.spinner i:nth-child(5){
+	opacity: .663;transform: rotate(120deg);
+}.spinner i:nth-child(6){
+	opacity: .583;transform: rotate(150deg);
+}.spinner i:nth-child(7){
+	opacity: .493;transform: rotate(180deg);
+}.spinner i:nth-child(8){
+	opacity: .413;transform: rotate(210deg);
+}.spinner i:nth-child(9){
+	opacity: .333;transform: rotate(240deg);
+}.spinner i:nth-child(10){
+	opacity: .249;transform: rotate(270deg);
+}.spinner i:nth-child(11){
+	opacity: .166;transform: rotate(300deg);
+}.spinner i:nth-child(12){
+	opacity: .083;transform: rotate(330deg);
+}
+
+.spinner:hover i{height: 34px;width: 11px;margin-left: -5px}
+
+.spinner:active i{transform: scale(.3);background: #000;}
+
+@keyframes spin{0%{transform: :rotate(0deg);}
+100%{transform: rotate(360deg);}}
+
+#form2{line-height: 1; display: inline-block; margin-left: 135px;}
+#text2,#id2,#phone2{background-color: #f2faf8}
+footer>div>ul>li>a{color: black;font-size: 15pt}
+footer>div>ul>li>a:hover{color: gray}
+footer>div>ul>li{padding-left: 55px;margin-top: 10px}
+footer{background-color: #e8e7e7}
+iframe{width: 100%; height: 200px;text-align: center;margin-left: -200px;margin-top: 50px}
